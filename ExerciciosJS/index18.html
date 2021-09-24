@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Média do aluno">
+    <title>Média do aluno</title>
+</head>
+
+<body>
+    <!-- Faça um algoritmo que leia três notas de um aluno, calcule e escreva a média final deste aluno. 
+    Considerar que a média é ponderada e que o peso das notas é 2, 3 e 5. -->
+    <script>
+        var nota1 = parseInt(prompt("Digite a nota 1 :"));
+        var nota2 = parseInt(prompt("Digite a nota 2 :"));
+        var nota3 = parseInt(prompt("Digite a nota 3 :"));
+        var resultado = ((nota1 * 2) + (nota2 * 3) + (nota3 * 5)) / 10;
+        window.alert("A média final do aluno é de : " + resultado)
+    </script>
+</body>
+
+</html>

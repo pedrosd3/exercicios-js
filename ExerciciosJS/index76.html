@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Sr. ou Sra.">
+    <title>Sr. ou Sra.</title>
+</head>
+
+<body>
+    <!-- Elaborar um programa que efetue a leitura do nome e do sexo de uma pessoa, apresentando com 
+saída uma das seguintes mensagens: "Ilmo Sr.", se o sexo informado como masculino, ou a 
+mensagem "Ilma Sra.", para o sexo informado como feminino. Apresente também junto da 
+mensagem de saudação o nome previamente informado. -->
+    <script>
+        var nome = prompt("Digite seu nome :");
+        var sexo = prompt("Digite seu sexo: 'm' para masculino e 'f' para feminino :");
+        if (sexo == 'm') {
+            alert("Olá Sr." + nome);
+        } else {
+            alert("Olá Sra." + nome);
+        }
+    </script>
+</body>
+
+</html>

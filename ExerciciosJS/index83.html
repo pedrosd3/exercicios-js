@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Sequência Fibonacci">
+    <title>Sequência Fibonacci</title>
+</head>
+
+<body>
+    <!-- Escreva um programa que apresente a série de Fibonacci até o décimo quinto termo. A série de 
+Fibonacci é formada pela seqüência: 1, 1, 2, 3, 5, 8, 13, 21, 34, ..., etc. Esta série se caracteriza 
+pela soma de um termo atual com o seu anterior subseqüente, para que seja formado o próximo 
+valor da seqüência. Portanto começando com os números 1, 1 o próximo termo é 1+1=2, o próximo 
+é 1+2=3, o próximo é 2+3=5, o próximo 3+5=8, etc. -->
+    <script>
+        var num1 = 1;
+        var num2 = 1;
+        var result1;
+        var result2;
+        var cont = 0;
+        while (cont <= 15) {
+            result1 = num1 + num2;
+            alert(num1 + "+" + num2 + "=" + result1);
+            result2 = result1;
+            num2 = num1;
+            num1 = result2;
+            cont++;
+        }
+    </script>
+</body>
+
+</html>

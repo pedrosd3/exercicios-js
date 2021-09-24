@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Eleição sindical">
+    <title>Eleição sindical</title>
+</head>
+
+<body>
+    <!-- Em uma eleição sindical concorreram ao cargo de presidente três candidatos (A, B e C). Durante a 
+apuração dos votos foram computados votos nulos e votos em branco, além dos votos válidos para 
+cada candidato. Deve ser criado um programa de computador que efetue a leitura da quantidade de 
+votos válidos para cada candidato, além de efetuar também a leitura da quantidade de votos nulos e 
+votos em branco. Ao final o programa deve apresentar o número total de eleitores, considerando votos 
+válidos, nulos e em branco; o percentual correspondente de votos válidos em relação à quantidade de 
+eleitores; o percentual correspondente de votos válidos do candidato A em relação à quantidade de 
+eleitores; o percentual correspondente de votos válidos do candidato B em relação à quantidade de 
+eleitores; o percentual correspondente de votos válidos do candidato C em relação à quantidade de 
+eleitores; o percentual correspondente de votos nulos em relação à quantidade de eleitores; e por último 
+o percentual correspondente de votos em branco em relação à quantidade de eleitores.
+ -->
+    <script>
+        var branco = parseFloat(prompt("Digite o total de votos brancos :"));
+        var nulo = parseFloat(prompt("Digite o total de votos nulos :"));
+        var valido = parseFloat(prompt("Digite o total de votos válidos :"));
+        var a = parseFloat(prompt("Digite o total de votos para o candidato A :"))
+        var b = parseFloat(prompt("Digite o total de votos para o candidato B :"))
+        var c = parseFloat(prompt("Digite o total de votos para o candidato C :"))
+        var total = branco + nulo + valido;
+        alert("A porcentagem de votos brancos foi de : " + (branco / total * 100).toFixed(2) + "%");
+        alert("A porcentagem de votos nulos foi de : " + (nulo / total * 100).toFixed(2) + "%");
+        alert("A porcentagem de votos válidos foi de : " + (valido / total * 100).toFixed(2) + "%");
+        alert("A porcentagem de votos o candidato A foi de : " + (a / total * 100).toFixed(2) + "%");
+        alert("A porcentagem de votos o candidato B foi de : " + (b / total * 100).toFixed(2) + "%");
+        alert("A porcentagem de votos o candidato C foi de : " + (c / total * 100).toFixed(2) + "%");
+
+    </script>
+</body>
+
+</html>

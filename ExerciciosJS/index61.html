@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Usuário e senha">
+    <title>Usuário e senha</title>
+</head>
+
+<body>
+    <!-- Faça um algoritmo para ler: a descrição do produto (nome), a quantidade adquirida e o preço 
+unitário. Calcular e escrever o total (total = quantidade adquirida * preço unitário), o desconto e o total 
+a pagar (total a pagar = total - desconto), sabendo-se que: 
+ - Se quantidade <= 5 o desconto será de 2% 
+ - Se quantidade > 5 e quantidade <=10 o desconto será de 3% 
+ - Se quantidade > 10 o desconto será de 5%   -->
+    <script>
+        var produto = prompt("Digite qual o nome do produto :");
+        var quantidade = parseInt(prompt("Digite a quantidade adquirida do produto :"));
+        var preco = parseFloat(prompt("Digite o preço unitério do produto adquirido :"));
+        var total;
+        if (quantidade <= 5) {
+            total = (quantidade * preco) * 0.98;
+            alert("O preço total gasto em " + produto + " foi de : R$" + total);
+        } else if (quantidade > 5) {
+            total = (quantidade * preco) * 0.97;
+            alert("O preço total gasto em " + produto + " foi de : R$" + total);
+        } else if (quantidade > 10) {
+            total = (quantidade * preco) * 0.95;
+            alert("O preço total gasto em " + produto + " foi de : R$" + total);
+        }
+    </script>
+</body>
+
+</html>

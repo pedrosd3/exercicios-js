@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Hora extra">
+    <title>Hora extra</title>
+</head>
+
+<body>
+    <!-- A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais
+de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%.
+Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva
+o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas
+(considere que o mês possua 4 semanas exatas). -->
+    <script>
+        var horas = parseInt(prompt("Digite quantas horas você trabalhou no mês."));
+        var valorHora = parseInt(prompt("Digite quanto você recebe por hora"));
+        var valorTotal = valorHora * horas;
+        var diferenca = horas - 160;
+        var valorExtra = valorTotal + ((diferenca * valorHora) * 0.5);
+        if (horas <= 160) {
+            window.alert("O valor do salário é de : R$" + valorTotal);
+        } else {
+            window.alert("O salário final com a hora extra é de : R$" + valorExtra);
+        }
+    </script>
+</body>
+
+</html>

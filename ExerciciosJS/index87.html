@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Área total de uma residência">
+    <title>Área total de uma residência</title>
+</head>
+
+<body>
+    <!-- Elaborar um programa que possibilite calcular a área total de uma residência (sala, cozinha, 
+banheiro, quartos, área de serviço, quintal, garagem, etc.). O programa deve solicitar a entrada do 
+nome, a largura e o comprimento de um determinado cômodo. Em seguida, deve apresentar a área 
+do cômodo lido e também uma mensagem solicitando do usuário a confirmação de continuar 
+calculando novos cômodos. Caso o usuário responda “NAO”, o programa deve apresentar o valor 
+total acumulado da área residencial. -->
+    <script>
+        var sala01 = parseFloat(prompt("Digite a largura da sala :"));
+        var sala02 = parseFloat(prompt("Digite o comprimento da sala :"));
+        var cozinha01 = parseFloat(prompt("Digite a largura da cozinha :"));
+        var cozinha02 = parseFloat(prompt("Digite o comprimento da cozinha :"));
+        var banheiro01 = parseFloat(prompt("Digite a largura da banheiro :"));
+        var banheiro02 = parseFloat(prompt("Digite o comprimento da banheiro :"));
+        var quarto01 = parseFloat(prompt("Digite a largura da quarto :"));
+        var quarto02 = parseFloat(prompt("Digite o comprimento quarto :"));
+        var cont = 1;
+
+        var areaSala = sala01 * sala02;
+        var areaCozinha = cozinha01 * cozinha02;
+        var areaBanheiro = banheiro01 * banheiro02;
+        var areaQuarto = quarto01 * quarto02;
+
+        alert("A área da sala é de : " + areaSala);
+        while (cont <= 1) {
+            var continuar = prompt("Digite sim para continuar vendo os outros cômodos, e não para parar");
+            if (continuar == 'sim') {
+                alert("A área da cozinha é de : " + areaCozinha);
+
+            } else {
+                cont++;
+            }
+        }
+        while (cont <= 1) {
+            var continuar = prompt("Digite sim para continuar vendo os outros cômodos, e não para parar");
+            if (continuar == 'sim') {
+                alert("A área da banheiro é de : " + areaBanheiro);
+                cont++;
+            } else {
+                cont++;
+            }
+        }
+        while (cont <= 1) {
+            var continuar = prompt("Digite sim para continuar vendo os outros cômodos, e não para parar");
+            if (continuar == 'sim') {
+                alert("A área da quarto é de : " + areaQuarto);
+                cont++;
+            } else {
+                cont++;
+            }
+        }
+    </script>
+</body>
+
+</html>

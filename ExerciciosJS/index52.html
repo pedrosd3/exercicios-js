@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Formar um triângulo">
+    <title>Formar um triângulo</title>
+</head>
+
+<body>
+    <!-- Ler 3 valores (A, B e C) representando as medidas dos lados de um triângulo e escrever se formam 
+ou não um triângulo. OBS: para formar um triângulo, o valor de cada lado deve ser menor que a soma 
+dos outros 2 lados. -->
+    <script>
+        var a = parseFloat(prompt("Digite o valor de A :"));
+        var b = parseFloat(prompt("Digite o valor de B :"));
+        var c = parseFloat(prompt("Digite o valor de C :"));
+        if (a < (b + c) && b < (a + c) && c < (a + b)) {
+            alert("Os valores podem formar um triângulo.");
+        } else {
+            alert("Não é possível formar um triângulo com esse valores.");
+        }
+    </script>
+</body>
+
+</html>

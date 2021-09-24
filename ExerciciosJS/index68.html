@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Média escolar">
+    <title>Média escolar</title>
+</head>
+
+<body>
+    <!-- Ler quatro valores referentes a quatro notas escolares de um aluno e imprimir uma mensagem 
+dizendo que o aluno foi aprovado, se o valor da média escolar for maior ou igual a 7. Se o valor da 
+média for menor que 7, solicitar a nota de exame, somar com o valor da média e obter nova média. 
+Se a nova média for maior ou igual a 5, apresentar uma mensagem dizendo que o aluno foi 
+aprovado em exame. Se o aluno não foi aprovado, indicar uma mensagem informando esta 
+condição. Apresentar com as mensagens o valor da média do aluno, para qualquer condição.  -->
+    <script>
+        var valor01 = parseFloat(prompt("Digite a primeira nota :"));
+        var valor02 = parseFloat(prompt("Digite a segunda nota :"));
+        var valor03 = parseFloat(prompt("Digite a terceira nota :"));
+        var valor04 = parseFloat(prompt("Digite a quarta nota :"));
+        var media = (valor01 + valor02 + valor03 + valor04) / 4;
+        if (media >= 7) {
+            alert("Sua média foi " + media + ", parabéns, você foi aprovado.");
+        } else {
+            var valor05 = parseFloat(prompt("Digite a nota do exame :"));
+            var media02 = (valor01 + valor02 + valor03 + valor04 + valor05) / 5;
+            if (media02 >= 5) {
+                alert("Sua média foi " + media02 + ", parabéns, você foi aprovado.");
+            } else {
+                alert("Sua média foi " + media02 + ", portanto, você foi reprovado.");
+            }
+        }
+    </script>
+</body>
+
+</html>

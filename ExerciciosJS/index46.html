@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Salário com reajuste">
+    <title>Salário com reajuste</title>
+</head>
+
+<body>
+    <!-- Ler o valor correspondente ao salário mensal (variável SM) de um trabalhador e também o valor do 
+percentual de reajuste (variável PR) a ser atribuído. Apresentar o valor do novo salário (variável NS). -->
+    <script>
+        var sm = parseFloat(prompt("Digite o salário :"));
+        var pr = parseFloat(prompt("Digite o valor do reajuste :"));
+        var resultado = (sm * (pr / 100)) + sm;
+        window.alert("O salário com rajuste será de : R$" + resultado.toFixed(2))
+    </script>
+</body>
+
+</html>

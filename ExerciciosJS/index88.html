@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Valores positivos">
+    <title>Valores positivos</title>
+</head>
+
+<body>
+    <!-- Elaborar um programa que efetue a leitura de valores positivos inteiros até que um valor negativo 
+seja informado. Ao final devem ser apresentados o maior e o menor valores informados pelo 
+usuário. -->
+    <script>
+        var valor01 = parseInt(prompt("Digite o valor do número 1 :"));
+        if (valor01 >= 0) {
+            var valor02 = parseInt(prompt("Digite o valor do número 2 :"));
+            if (valor02 >= 0) {
+                var valor03 = parseInt(prompt("Digite o valor do número 3 :"));
+                if (valor03 >= 0) {
+                    var valor04 = parseInt(prompt("Digite o valor do número 4 :"));
+                    if (valor04 >= 0) {
+                        var valor05 = parseInt(prompt("Digite o valor do número 5 :"));
+                        var maior = Math.max(valor01, valor02, valor03, valor04, valor05);
+                        var menor = Math.min(valor01, valor02, valor03, valor04, valor05);
+                        alert("Três valores foram digitados" +
+                            "\n O maior valor foi : " + maior + "\n O menor valor foi : " + menor);
+                    } else {
+                        var maior = Math.max(valor01, valor02, valor03);
+                        alert("Três valores foram digitados" +
+                            "\n O maior valor foi : " + maior + "\n O menor valor foi : " + valor04);
+                    }
+                } else {
+                    var maior = Math.max(valor01, valor02);
+                    alert("Três valores foram digitados" +
+                        "\n O maior valor foi : " + maior + "\n O menor valor foi : " + valor03);
+                }
+            } else {
+                alert("Dois valores foram digitados" +
+                    "\n O maior valor foi : " + valor01 + "\n O menor valor foi : " + valor02);
+            }
+        } else {
+            alert("Apenas um número foi digitado" + "\n O número foi : " + valor01);
+        }
+    </script>
+
+</body>
+
+</html>

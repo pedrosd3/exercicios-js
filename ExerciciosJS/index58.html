@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Frutas com desconto">
+    <title>Frutas com desconto</title>
+</head>
+
+<body>
+    <!-- Uma fruteira está vendendo frutas com a seguinte tabela de preços: 
+                Até 5 Kg         Acima de 5 Kg 
+    Morango     R$ 2,50 por Kg   R$ 2,20 por Kg 
+    Maçã        R$ 1,80 por Kg   R$ 1,50 por Kg 
+
+Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00, receberá 
+ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de 
+morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.   -->
+    <script>
+        var maca = parseFloat(prompt("Digite a quantidade em kg comprada de maçã :"));
+        var morango = parseFloat(prompt("Digite a quantidade em kg comprada de morango :"));
+        var totalMaca;
+        var totalMorango;
+        if (maca <= 5) {
+            totalMaca = maca * 2.5;
+        } else {
+            totalMaca = maca * 2.2;
+        }
+        if (morango <= 5) {
+            totalMorango = morango * 1.8;
+        } else {
+            totalMorango = morango * 1.5;
+        }
+        var total = totalMaca + totalMorango;
+        if (maca + morango > 8 || total > 25) {
+            total = total * 0.9;
+            alert("O valor total das compras foi de : R$" + total.toFixed(2));
+        } else {
+            alert("O valor total das compras fi de : R$" + total.toFixed(2));
+        }
+    </script>
+</body>
+
+</html>

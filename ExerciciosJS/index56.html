@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Desconto combustível">
+    <title>Desconto combustível</title>
+</head>
+
+<body>
+    <!-- Um posto está vendendo combustíveis com a seguinte tabela de descontos: 
+     Álcool     até 20 litros, desconto de 3% por litro
+                acima de 20 litros, desconto de 5% por litro
+    
+    Gasolina    até 20 litros, desconto de 4% por litro 
+                acima de 20 litros, desconto de 6% por litro
+            
+    Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustível (codificado da 
+    seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se 
+    que o preço do litro da gasolina é R$ 3,30 e o preço do litro do álcool é R$ 2,90.-->
+    <script>
+        var quantidade = parseInt(prompt("Digite quantos litros de combustível serão abastecidos"));
+        var combustivel = prompt("Digite 'A' para abastecer com álcool, e 'G' com gasolina.");
+        var total;
+        if (combustivel == 'a' && quantidade <= 20) {
+            total = (2.9 * quantidade) * 0.97;
+            alert("O total cobrado será de : R$" + total);
+        } else if (combustivel == 'a' && quantidade >= 20) {
+            total = (2.9 * quantidade) * 0.95;
+            alert("O total cobrado será de : R$" + total);
+        } else if (combustivel == 'g' && quantidade >= 20) {
+            total = (3.3 * quantidade) * 0.96;
+            alert("O total cobrado será de : R$" + total);
+        } else {
+            total = (3.3 * quantidade) * 0.94;
+            alert("O total cobrado será de : R$" + total);
+        }
+    </script>
+</body>
+
+</html>

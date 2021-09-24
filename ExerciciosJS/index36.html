@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Idade para votar">
+    <title>Idade para votar</title>
+</head>
+
+<body>
+    <!-- Ler o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga se ela 
+poderá ou não votar este ano (não é necessário considerar o mês em que a pessoa nasceu). -->
+    <script>
+        var atual = parseInt(prompt("Digite o ano atual :"));
+        var nasc = parseInt(prompt("Digite o ano em que você nasceu :"));
+        var idade = atual - nasc;
+        if (idade >= 16) {
+            window.alert("Você está apto para votar.");
+        } else {
+            window.alert("Você não possui idade suficiente para votar.");
+        }
+    </script>
+</body>
+
+</html>

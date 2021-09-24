@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Média dos exercícios">
+    <title>Média dos exercícios</title>
+</head>
+
+<body>
+    <!-- Faça um algoritmo para ler as 3 notas obtidas por um aluno nas 3 verificações e a média dos 
+exercícios que fazem parte da avaliação. Calcular a média de aproveitamento, usando a fórmula abaixo 
+e escrever o conceito do aluno de acordo com a tabela de conceitos mais abaixo: 
+                           N1 + N2 * 2 + N3 * 3 + Média_dos_Exercícios
+Média_de_Aproveitamento = ---------------------------------------------
+                                        7    
+                                    
+Média de Aproveitamento Conceito 
+    > = 9,0 A 
+    > = 7,5 e < 9,0 B 
+    > = 6,0 e < 7,5 C 
+    < 6,0 D-->
+    <script>
+        var nota01 = parseFloat(prompt("Digite o valor da nota 1 :"));
+        var nota02 = parseFloat(prompt("Digite o valor da nota 2 :"));
+        var nota03 = parseFloat(prompt("Digite o valor da nota 3 :"));
+        var media = (nota01 + nota02 * 2 + nota03 * 3 + ((nota01 + nota02 + nota03) / 3)) / 7;
+        if (media >= 9) {
+            alert("Sua nota final foi A.");
+        } else if (media >= 7.5 && media < 9) {
+            alert("Sua nota final foi B.");
+        } else if (media >= 6 && media < 7.5) {
+            alert("Sua nota final foi C.");
+        } else {
+            alert("Sua nota final foi D.");
+        }
+    </script>
+</body>
+
+</html>

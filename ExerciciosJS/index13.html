@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Votos da cidade">
+    <title>Votos da cidade</title>
+</head>
+
+<body>
+    <!-- Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos 
+    brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total 
+    de eleitores. -->
+    <script>
+        var numero01 = parseInt(prompt("Digite a quantidade de votos brancos :"));
+        var numero02 = parseInt(prompt("Digite a quantidade de votos nulos :"));
+        var numero03 = parseInt(prompt("Digite a quantidade de votos válidos :"));
+        var resultado = numero01 + numero02 + numero03;
+        var branco = numero01 / resultado * 100;
+        var nulo = numero02 / resultado * 100;
+        var valido = numero03 / resultado * 100;
+        window.alert("A cidade teve " + resultado + " votos no total. " +
+            branco.toFixed(2) + "% em votos brancos " + nulo.toFixed(2) + "% em votos nulo " + valido.toFixed(2) +
+            "% em votos válidos.");
+    </script>
+
+</body>
+
+</html>
