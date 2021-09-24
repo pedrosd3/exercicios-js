@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="Tabuleiro de xadrez">
+    <title>Tabuleiro de xadrez</title>
+</head>
+
+<body>
+    <!-- Elaborar um programa que efetue o cálculo e no final apresente o somatório do número de grãos de 
+trigo que se pode obter num tabuleiro de xadrez, obedecendo à seguinte regra: colocar um grão de 
+trigo no primeiro quadro e nos quadros seguintes o dobro do quadro anterior. Ou seja, no primeiro 
+quadro coloca-se 1 grão, no segundo quadro colocam-se 2 grãos (neste momento têm-se 3 grãos), 
+no terceiro quadro colocam-se 4 grãos (tendo neste momento 7 grãos), no quarto colocam-se 8 
+grãos (tendo-se então 15 grãos) até atingir o sexagésimo quarto (64o) quadro.
+Utilize variáveis do tipo real como acumuladores. -->
+    <script>
+        var quadro = 2;
+        var numero01 = 1;
+        var numero02;
+        var numero03;
+        var resultado;
+        while (quadro <= 64) {
+            numero02 = numero01 * 2;
+            numero03 = numero02;
+            quadro++;
+            numero01 = numero03;
+            resultado = numero01;
+        }
+        alert(resultado);
+    </script>
+</body>
+
+</html>

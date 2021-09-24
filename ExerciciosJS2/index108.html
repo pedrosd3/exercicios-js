@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Ferreira da Silva">
+    <meta name="description" content="De Celsius para Fahrenheit de 10 em 10">
+    <title>SDe Celsius para Fahrenheit de 10 em 10</title>
+</head>
+
+<body>
+    <!-- Elaborar um programa que apresente os valores de conversão de graus Celsius em Fahrenheit, de 
+10 em 10 graus, iniciando a contagem em 10 graus Celsius e finalizando em 100 graus Celsius. O 
+programa deve apresentar os valores das duas temperaturas.  -->
+    <p id="demo"></p>
+    <script>
+        var celsius = 10;
+        var result;
+        while (celsius <= 100) {
+            if (celsius % 10 === 0) {
+                result = ((9 * celsius) + 160) / 5;
+                alert(celsius + "°C = " + result + "°F");
+            }
+            celsius++;
+        }
+    </script>
+</body>
+
+</html>
